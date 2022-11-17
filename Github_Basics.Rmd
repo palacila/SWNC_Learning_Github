@@ -1,0 +1,127 @@
+---
+title: "Github Basics"
+author: "Sam Olivares-Mejia"
+date: '2022-11-17'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+```
+
+# {.tabset .tabset-pills} 
+
+## First Time Set Up 
+This section is adapted from Kate Miller and Sarah Wright's IMD Training on [Version Control](https://katemmiller.github.io/IMD_R_Training_Advanced/) 
+
+### 1. Set Up a Github Account 
+
+Go to [Join Github](https://github.com/join) to get started! 
+
+This [Wiki How](https://www.wikihow.com/Create-an-Account-on-GitHub) gives in depth instructions on how to set up your account if you're having trouble 
+
+Once you've completed this step please *email your username to Sam (samantha_olivares-mejia@partner.nps.gov)* so she can add you to our training github page! 
+
+#### 2. Open R Studio 
+
+#### 3. Navigate to **Tools > Global Options** 
+  a. On the list on the left, click on GIT SVN
+  b. Make sure the 'Enable version interface for RStudio project box is checked 
+  c. Your screen should look like this (git.exe path may differ)
+
+![](images/GitSVN.png){width=500px}
+
+  d. Click Apply then OK 
+  
+#### 4. Create a Personal Access Token 
+Your personal access token is used to connect your Github account to RStudio.
+  a. run the code below in R Studio which will open a web browser to create a personal access token 
+  
+```{r MakeGHToken, eval=FALSE}
+# This opens up a browser window where you can create a personal access token. It may ask you to log into GitHub or confirm your password.
+usethis::create_github_token()
+``` 
+  
+  b. once you've logged into GitHub your page will look like this 
+
+![](images/GitHubPAT.png){width=800px}
+
+  c. enter 'RStudio' in the ***Note** field 
+  d. set the **expiration** to a later date (I'd reccommend a year)
+  e. scroll to the bottom and click **generate token** 
+  f. this code will only generate once so make sure you **copy the personal access token to your clipboard**!!! 
+
+#### 5. Insert your personal access token in the Git Credential Store 
+  a. run the code below and when prompted paste your personal access token 
+
+```{SetGHCreds, eval=FALSE}
+gitcreds::gitcreds_set()
+```
+
+## Github Overview 
+Git/Github is a type of **version control** which is a way to save your progress in an organized manner. It allows you to keep track of your changes every step of the way, and allows for easy collaboration between teams. 
+
+Git and Github are used interchangebly, however they are two sperate entities. 
+
+  **Git** is the software you install on your computer 
+  **GitHub** is an online interface for storing and collaborating with code.  
+
+#### Some terminology
+
+![](images/repository.png)
+
+![](images/TermsToKnow.png)
+
+```{r pushvpull, echo=FALSE, fig.align='center', out.width="50%"}
+include_graphics("images/PushvPull.png")
+```
+![](images/timeline.png)
+
+![](images/branch.png)
+
+![](images/merge.png)
+
+![](images/workflow.png)
+
+## Branch and Clone Repository
+
+### Branch 
+
+First we are going to create a branch from main. To do this, go to the [SWNC Learning Github Repository](https://github.com/sam-olivares-mejia/SWNC_Learning_Github). 
+
+If you've emailed Sam your GitHub username you should have contributor access to the repository. 
+
+Click on the **main dropdown** in the upper left, and begin typing your name separated by underscores. Once complete, click on **'Create branch:*your name* from main'**. This will create your branch! 
+
+```{r createbranch, echo=FALSE, fig.align='center', out.width="50%"}
+include_graphics("images/CreateBranch.png")
+```
+
+### Clone the Repository
+
+1. Click on **code** in the upper right, and copy the HTTPS url provided. 
+
+```{r CloneRepo, echo=FALSE, fig.align='center', out.width="50%"}
+include_graphics("images/CloneRepo.png")
+```
+
+2. Open R Studio and go to **File>NewProject>VersionControl>Git** 
+
+3. Paste the repository URL and click OK. Congrats- you have now cloned the repository to your local computer! 
+
+## Stage and Commit
+
+### Create a Markdown file 
+
+
+
+### Stage 
+
+
+
+## Push + Pull 
+
+## Merge 
+
+# {-}
