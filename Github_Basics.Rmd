@@ -87,7 +87,7 @@ usethis::create_github_token()
 ### 6. Insert your personal access token in the Git Credential Store 
   a. run the code below and when prompted paste your personal access token 
 
-```{r SetGHCreds, eval=FALSE}
+```{ SetGHCreds, eval=FALSE}
 gitcreds::gitcreds_set()
 ```
 
