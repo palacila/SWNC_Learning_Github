@@ -165,9 +165,9 @@ include_graphics("images/SwitchBranch.png")
 
 ## (Re)Sources
   - [Link to Join Github](https://github.com/join)
-  
   - [How to Create a GitHub Account](https://www.wikihow.com/Create-an-Account-on-GitHub)
-
+  - [R Advisory Group Resources](https://doimspp.sharepoint.com/sites/nps-nrss-imdiv/SitePages/R-Adv.aspx) Monitors and manages the release of R, RStudio and Git in the NPS Software Center. The Advisory Group can help with installation and configuration issues.
+  - [Happy Git and GitHub for the useR](https://happygitwithr.com/index.html)
   - [Version Control IMD Training](https://katemmiller.github.io/IMD_R_Training_Advanced/)
   - [GitHub Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
 
