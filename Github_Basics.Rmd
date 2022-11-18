@@ -1,7 +1,7 @@
 ---
 title: "Github Basics"
-author: "Sam Olivares-Mejia"
-date: '2022-11-17'
+author: "Sam Olivares-Mejia and Laura Palacios"
+date: "`r Sys.Date()`"
 output: html_document
 ---
 
