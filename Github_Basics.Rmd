@@ -15,17 +15,30 @@ library(knitr)
 ## First Time Set Up 
 This section is adapted from Kate Miller and Sarah Wright's IMD Training on [Version Control](https://katemmiller.github.io/IMD_R_Training_Advanced/) 
 
-### 1. Set Up a Github Account 
+### 1. Install Git
+  Git is the software needed for this learning session.If you do not already have Git installed on your computer, please install before the session.  
+  
+  a. Open the **Software Center** application on your computer (this will allow you to download without admin approval)
+  b. Navigate to the **Applications** tab 
+  c. Click on **Git** 
+  d. Click Install 
+    
+![](images/InstallGit.png){width=500px}
+
+### 2. Set Up a Github Account 
 
 Go to [Join Github](https://github.com/join) to get started! 
 
 This [Wiki How](https://www.wikihow.com/Create-an-Account-on-GitHub) gives in depth instructions on how to set up your account if you're having trouble 
 
-Once you've completed this step please *email your username to Sam (samantha_olivares-mejia@partner.nps.gov)* so she can add you to our training github page! 
+Once you've completed this step please **email your username to Sam (samantha_olivares-mejia@partner.nps.gov)** so she can add you to our training github page! 
 
-#### 2. Open R Studio 
+#### 3. Open R Studio and install the `usethis` package 
+  Remember, to install packages we use the install.packages() function. You can type this in the Console (lower left panel) with "usethis" inside the parenthesis.
 
-#### 3. Navigate to **Tools > Global Options** 
+ex: install.packages("usethis")
+
+#### 4. Navigate to **Tools > Global Options** 
   a. On the list on the left, click on GIT SVN
   b. Make sure the 'Enable version interface for RStudio project box is checked 
   c. Your screen should look like this (git.exe path may differ)
@@ -34,7 +47,7 @@ Once you've completed this step please *email your username to Sam (samantha_oli
 
   d. Click Apply then OK 
   
-#### 4. Create a Personal Access Token 
+#### 5. Create a Personal Access Token 
 Your personal access token is used to connect your Github account to RStudio.
   a. run the code below in R Studio which will open a web browser to create a personal access token 
   
@@ -52,7 +65,7 @@ usethis::create_github_token()
   e. scroll to the bottom and click **generate token** 
   f. this code will only generate once so make sure you **copy the personal access token to your clipboard**!!! 
 
-#### 5. Insert your personal access token in the Git Credential Store 
+#### 6. Insert your personal access token in the Git Credential Store 
   a. run the code below and when prompted paste your personal access token 
 
 ```{SetGHCreds, eval=FALSE}
