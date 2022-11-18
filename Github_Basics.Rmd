@@ -29,28 +29,45 @@ If you're having issues installing Git, consult the [R Advisory Group Resources 
 
 ### 2. Set Up a Github Account 
 
-Go to [Join Github](https://github.com/join) to get started! 
+Go to [Join Github](https://github.com/join) to get started!
 
-This [Wiki How](https://www.wikihow.com/Create-an-Account-on-GitHub) gives in depth instructions on how to set up your account if you're having trouble 
+Username example: LpalaciosNPS or sam-olivares-mejia
 
-Once you've completed this step please **email your username to Sam (samantha_olivares-mejia@partner.nps.gov)** so she can add you to our training github page! 
+You will need to verify your email to complete the joining process.
+
+Once verified you will see the screen below. You don't need to personalize your account right away, click skip to reach your home screen.
+
+![](images/GitHubSetup.png){width=500px}
+
+Your new home page will look like this
+
+![](images/GitHubHome.png){width=500px}
+</br></br></br>
+
+**To Do: Once you've completed this step ** </br>
+**Please email your username to Sam (samantha_olivares-mejia@partner.nps.gov)** so she can add you to our training github page! 
+
+Still having trouble? This [Wiki How](https://www.wikihow.com/Create-an-Account-on-GitHub) gives in depth instructions. 
 
 ### 3. Open R Studio and install the `usethis` package 
-  Remember, to install packages we use the install.packages() function. You can type this in the Console (lower left panel) with "usethis" inside the parenthesis.
+  Remember, to install packages we use the install.packages() function. You can type this in the Console.
+  
+![](images/InstallUseThis.png){width=300px}
 
-ex: install.packages("usethis")
+
 
 ### 4. Navigate to **Tools > Global Options** 
   a. On the list on the left, click on GIT SVN
   b. Make sure the 'Enable version interface for RStudio project box is checked 
   c. Your screen should look like this (git.exe path may differ)
 
-![](images/GitSVN.png){width=500px}
+![](images/GitSVN.png){width=300px}
 
   d. Click Apply then OK 
   
 ### 5. Create a Personal Access Token 
 Your personal access token is used to connect your Github account to RStudio.
+
   a. run the code below in R Studio which will open a web browser to create a personal access token 
   
 ```{r MakeGHToken, eval=FALSE}
@@ -60,7 +77,7 @@ usethis::create_github_token()
   
   b. once you've logged into GitHub your page will look like this 
 
-![](images/GitHubPAT.png){width=800px}
+![](images/GitHubPAT.png){width=500px}
 
   c. enter 'RStudio' in the ***Note** field 
   d. set the **expiration** to a later date (I'd reccommend a year)
@@ -70,7 +87,7 @@ usethis::create_github_token()
 ### 6. Insert your personal access token in the Git Credential Store 
   a. run the code below and when prompted paste your personal access token 
 
-```{SetGHCreds, eval=FALSE}
+```{r SetGHCreds, eval=FALSE}
 gitcreds::gitcreds_set()
 ```
 
