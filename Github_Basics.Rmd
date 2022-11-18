@@ -25,6 +25,8 @@ This section is adapted from Kate Miller and Sarah Wright's IMD Training on [Ver
     
 ![](images/InstallGit.png){width=500px}
 
+If you're having issues installing Git, consult the [R Advisory Group Resources Sharepoint site](https://doimspp.sharepoint.com/sites/nps-nrss-imdiv/SitePages/R-Adv.aspx) and submit a helpdesk ticket if needed. 
+
 ### 2. Set Up a Github Account 
 
 Go to [Join Github](https://github.com/join) to get started! 
