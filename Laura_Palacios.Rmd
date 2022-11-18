@@ -1,0 +1,12 @@
+---
+title: "Laura_Palacios"
+author: "Laura Palacios"
+date: '2022-11-18'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This will be the best RMD file ever created!
