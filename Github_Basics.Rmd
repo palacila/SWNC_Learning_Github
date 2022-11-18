@@ -108,20 +108,52 @@ include_graphics("images/CloneRepo.png")
 
 2. Open R Studio and go to **File>NewProject>VersionControl>Git** 
 
-3. Paste the repository URL and click OK. Congrats- you have now cloned the repository to your local computer! 
+```{r CloneRepoWorkflow, echo=FALSE, fig.align='center', out.width="50%"}
+include_graphics("images/CloneRepoWorkflow.png")
+```
+
+3. Paste the repository URL and click **Create Project**. Congrats- you have now cloned the repository to your local computer! 
+
+### Open Branch 
+
+To switch to your branch of the repository, navigate to the Git Panel in RStudio. It should be located in the upper right panel next to your environment. If it is not there you can go to **View >ShowGit** to view it.
+
+Click the drop down menu in the upper right and select your branch name to switch to your branch!  
+
+```{r SwitchBranches, echo=FALSE, fig.align='center', out.width="50%"}
+include_graphics("images/SwitchBranch.png")
+```
+
 
 ## Stage and Commit
 
+
+
 ### Create a Markdown file 
-
-
 
 ### Stage 
 
+### Commit
 
 
 ## Push + Pull 
 
+### Push
+
+### Pull 
+
 ## Merge 
+
+### Pull Request 
+
+### Merge 
+
+## (Re)Sources
+  - [Link to Join Github](https://github.com/join)
+  
+  - [How to Create a GitHub Account](https://www.wikihow.com/Create-an-Account-on-GitHub)
+
+  - [Version Control IMD Training](https://katemmiller.github.io/IMD_R_Training_Advanced/)
+  - [GitHub Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
 
 # {-}
