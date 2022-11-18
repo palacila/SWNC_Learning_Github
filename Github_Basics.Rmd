@@ -164,16 +164,76 @@ include_graphics("images/SwitchBranch.png")
 
 
 ### Create a Markdown file 
+We will create a new markdown file to add to the file structure by clicking file > New File > R Markdown.
+![](images/CreateRMD.png){width=300px}
+When prompted, enter FirstName_LastName as the title of your document. This will auto-poplate the green header block of your file.  All other options can be left as defaults. Click OK to create.
 
+RMD files contain example code when they are created.We will keep the top block, but delete everything else (lines 11-30). 
+
+Delete the code and replace with your own secret branch message.
+![](images/PersonalizedRMD.png){width=400px}
+
+Save the changes in the default location (Rstudio will put the file where it is supposed to go) and enter YourFirstName_LastName as the file name.
+![](images/PersonalizedRMD2.png){width=400px}
+
+Navigate to the GIT tab in the upper right. Notice that your RMD file is now listed, with an ? icon to indicate that it has been modified in some way. Note that other back-ed files may also be present and can be ignored for this training.
+![](images/CommitChanges1.png){width=400px}
 ### Stage 
 
+Click the check box next to your new file. Notice that it is highlighted and the ? icon changes to an "A" for addition. Click the commit button.
+![](images/CommitChanges2.png){width=400px}
 ### Commit
 
+A pop-up menu will show you a preview of what you are committing, allowing for you to make a final review.
+
+Notice that the file previous is all green, to indicate additions. Other colors indicate other modifications.
+
+Use the commit message box (requires entry) to describe the changes you have made. Note that anyone with access to the repository will eventually be able to see it.
+
+Once your message is entered, press the commit button at the bottom of the message box.
+
+![](images/CommitChanges3.png){width=400px}
+A wild popup appears!
+
+This popup shows the status of your commit. If you have not configured your username, you may receive a message that Rstudio has automatically attributed your information. This is okay, we'll use the defaults for now.
+
+What we want to see is the last two lines indicating that a file has been changed and listing your RMD file.
+
+![](images/CommitMessage.png){width=400px}
+
+Return to your R studio. In the top left, you should see a note indicating that you have successfully committed a change and are now "ahead". This means that your version has changes that no one else can see. 
+![](images/CommitReadytoPush.png){width=400px}
+
+But we want **Everyone** to be able to see your hard work!
+This is where pushing and pulling comes in.
 
 ## Push + Pull 
 
 ### Push
+Pushing means that you take your local changes and throw them into a magical world where everyone can see what you've created (GitHub).
 
+Use the green arrow to push your changes. Note that this arrow is in multiple locations in R studio. All accomplish the same thing.
+
+![](images/PushMyButtons.png){width=400px}
+
+Another popup should appear.
+
+If you have had success, you will see a message like the one below.
+
+Translation of the last line: 
+
+you (HEAD) have pushed (->)to the branch (YourFirstName_LastName)
+![](images/SuccessfulPush.png){width=400px}
+Use your browser to navigate back to our GitHub Repo
+[https://github.com/sam-olivares-mejia/SWNC_Learning_Github](https://github.com/sam-olivares-mejia/SWNC_Learning_Github)
+
+Ensure that you're on your branch by clicking the branch dropdown menu and selecting your name.
+![](images/WhatBranch.png){width=400px}
+
+When you change branches, you should be automatically directed to the home screen of the branch. If you were successful, you will see your commit message has been logged and your file now exists online, accessible to others.
+
+Gold Stars if you've made it this far!!
+![](images/PushForSuccess.png){width=400px}
 ### Pull 
 
 ## Merge 
