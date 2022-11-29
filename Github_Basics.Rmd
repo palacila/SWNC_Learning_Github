@@ -52,7 +52,7 @@ Still having trouble? This [Wiki How](https://www.wikihow.com/Create-an-Account-
 ### 3. Open R Studio and install the `usethis` package 
   Remember, to install packages we use the install.packages() function. You can type this in the Console.
   
-![](images/InstallUseThis.png){width=300px}
+![](images/InstallUseThis.png){width=600px, height=400px}
 
 
 
@@ -128,21 +128,23 @@ If you've emailed Sam your GitHub username you should have contributor access to
 
 Click on the **main dropdown** in the upper left, and begin typing your name separated by underscores. Once complete, click on **'Create branch:*your name* from main'**. This will create your branch! 
 
-```{r createbranch, echo=FALSE, fig.align='center', out.width="50%"}
+```{r createbranch, echo=FALSE, out.width="30%"}
 include_graphics("images/CreateBranch.png")
 ```
+
+*Note: Typically we make branches to work on different sections of the code and name them accordingly (ex.'DataWrangling', 'Analysis'). This ensures that when developing the code, we are not editing the same sections in different branches at the same time which would create issues in merging the code later on.*
 
 ### Clone the Repository
 
 1. Click on **code** in the upper right, and copy the HTTPS url provided. 
 
-```{r CloneRepo, echo=FALSE, fig.align='center', out.width="50%"}
+```{r CloneRepo, echo=FALSE, out.width="30%"}
 include_graphics("images/CloneRepo.png")
 ```
 
 2. Open R Studio and go to **File>NewProject>VersionControl>Git** 
 
-```{r CloneRepoWorkflow, echo=FALSE, fig.align='center', out.width="50%"}
+```{r CloneRepoWorkflow, echo=FALSE, out.width="50%"}
 include_graphics("images/CloneRepoWorkflow.png")
 ```
 
@@ -154,7 +156,7 @@ To switch to your branch of the repository, navigate to the Git Panel in RStudio
 
 Click the drop down menu in the upper right and select your branch name to switch to your branch!  
 
-```{r SwitchBranches, echo=FALSE, fig.align='center', out.width="50%"}
+```{r SwitchBranches, echo=FALSE, out.width="50%"}
 include_graphics("images/SwitchBranch.png")
 ```
 
@@ -166,7 +168,10 @@ include_graphics("images/SwitchBranch.png")
 ### Create a Markdown file 
 We will create a new markdown file to add to the file structure by clicking file > New File > R Markdown.
 
-![](images/CreateRMD.png){width=300px}
+```{r create, echo=FALSE, out.width="50%"}
+include_graphics("images/CreateRMD.png")
+```
+
 
 When prompted, enter FirstName_LastName as the title of your document. This will auto-poplate the green header block of your file.  All other options can be left as defaults. Click OK to create.
 
@@ -174,23 +179,31 @@ RMD files contain example code when they are created.We will keep the top block,
 
 Delete the code and replace with your own secret branch message.
 
-![](images/PersonalizedRMD.png){width=400px}
-
+```{r personalized, echo=FALSE, out.width="70%"}
+include_graphics("images/PersonalizedRMD.png")
+```
 
 Save the changes in the default location (Rstudio will put the file where it is supposed to go) and enter YourFirstName_LastName as the file name.
 
-![](images/PersonalizedRMD2.png){width=400px}
+```{r personalized2, echo=FALSE, out.width="70%"}
+include_graphics("images/PersonalizedRMD2.png")
+```
 
 
 Navigate to the GIT tab in the upper right. Notice that your RMD file is now listed, with an ? icon to indicate that it has been modified in some way. Note that other back-ed files may also be present and can be ignored for this training.
+```{r commitchanges1, echo=FALSE, out.width="70%"}
+include_graphics("images/CommitChanges1.png")
+```
 
-![](images/CommitChanges1.png){width=400px}
 
 ### Stage 
 
 Click the check box next to your new file. Notice that it is highlighted and the ? icon changes to an "A" for addition. Click the commit button.
 
-![](images/CommitChanges2.png){width=400px}
+```{r commitchanges2, echo=FALSE, out.width="70%"}
+include_graphics("images/CommitChanges2.png")
+```
+
 
 ### Commit
 
@@ -202,7 +215,10 @@ Use the commit message box (requires entry) to describe the changes you have mad
 
 Once your message is entered, press the commit button at the bottom of the message box.
 
-![](images/CommitChanges3.png){width=400px}
+
+```{r commitchanges3, echo=FALSE, out.width="70%"}
+include_graphics("images/CommitChanges3.png")
+```
 
 A wild popup appears!
 
@@ -210,12 +226,16 @@ This popup shows the status of your commit. If you have not configured your user
 
 What we want to see is the last two lines indicating that a file has been changed and listing your RMD file.
 
-![](images/CommitMessage.png){width=400px}
+```{r commitmessage, echo=FALSE, out.width="50%"}
+include_graphics("images/CommitMessage.png")
+```
 
 
 Return to your R studio. In the top left, you should see a note indicating that you have successfully committed a change and are now "ahead". This means that your version has changes that no one else can see. 
 
-![](images/CommitReadytoPush.png){width=400px}
+```{r commitreadytopush, echo=FALSE, out.width="50%"}
+include_graphics("images/CommitReadytoPush.png")
+```
 
 
 But we want **Everyone** to be able to see your hard work!
@@ -228,7 +248,9 @@ Pushing means that you take your local changes and throw them into a magical wor
 
 Use the green arrow to push your changes. Note that this arrow is in multiple locations in R studio. All accomplish the same thing.
 
-![](images/PushMyButtons.png){width=400px}
+```{r Pushbuttons, echo=FALSE, out.width="60%"}
+include_graphics("images/PushMyButtons.png")
+```
 
 
 Another popup should appear.
@@ -239,21 +261,27 @@ Translation of the last line:
 
 you (HEAD) have pushed (->)to the branch (YourFirstName_LastName)
 
-![](images/SuccessfulPush.png){width=400px}
+```{r successfulpush, echo=FALSE, out.width="60%"}
+include_graphics("images/successfulPush.png")
+```
 
 Use your browser to navigate back to our GitHub Repo
 [https://github.com/sam-olivares-mejia/SWNC_Learning_Github](https://github.com/sam-olivares-mejia/SWNC_Learning_Github)
 
 Ensure that you're on your branch by clicking the branch dropdown menu and selecting your name.
 
-![](images/WhatBranch.png){width=400px}
+```{r whatbranch, echo=FALSE, out.width="70%"}
+include_graphics("images/WhatBranch.png")
+```
 
 
 When you change branches, you should be automatically directed to the home screen of the branch. If you were successful, you will see your commit message has been logged and your file now exists online, accessible to others.
 
 Gold Stars if you've made it this far!!
 
-![](images/PushForSuccess.png){width=400px}
+```{r pushforsuccess, echo=FALSE, out.width="70%"}
+include_graphics("images/PushForSuccess.png")
+```
 
 ### Pull 
 To pull data means that you take work that is on GitHub and bring it down locally to edit. (The opposite of pushing)
@@ -266,22 +294,88 @@ We will practice pulling and pushing by using another learner's branch. To avoid
 
 Navigate to your user's branch using the branch dropdown menu (same as before). Make sure that you can see their RMD file. If you cannot, please let us know.
 
-![](images/WhatBranch.png){width=400px}
+```{r whatbranch2, echo=FALSE, out.width="70%"}
+include_graphics("images/WhatBranch.png")
+```
 
 Now we'll change our branch in R studio. Click the dropdown menu (likey populated with FirstName_LastName, indicating the branch you created.)
 
 From the dropdown menu, click your partner's name.
 
-![](images/ChangeBranch.png){width=400px}
 
+```{r changebranch, echo=FALSE, out.width="70%"}
+include_graphics("images/ChangeBranch.png")
+```
 
 ## Merge 
 
-### Pull Request 
+As we learned earlier, a merge is used to combine your branches commits with main. 
+
+```{r mergereminder, echo=FALSE, out.width="70%"}
+include_graphics("images/merge.png")
+```
+
+When you're ready to merge the changes you made on your branch to the main, navigate to your branch's page on github. There will be a section on this page that tells you the status of your branch compared to the main. 
+
+```{r BranchPage, echo=FALSE, out.width="50%"}
+include_graphics("images/BranchPage.png")
+```
+
+In the example above, our branch is 3 commits ahead, and 18 commits behind the main.This tells you that there are 3 changes your branch has that the Main doesn't have, and 18 commits the main has that your branch doesn't. Typically, your branch will have more commits 'ahead' vs 'behind' the main.
+
+Below is an example to help visualize branches being 'ahead' or 'behind' the main. 
+
+```{r aheadvbehind, echo=FALSE, out.width="70%"}
+include_graphics("images/AheadVsBehind.png")
+```
+
+### Compare Changes  
+
+To begin the merge process, click on the hyper linked text telling you how many commits ahead or behind your branch is. This will lead you to a **Comparing Changes** page. 
+
+Lets break down this page. 
+
+```{r pullrequest, echo=FALSE, out.width="90%"}
+include_graphics("images/PullRequest.png")
+```
+
+Outlined in **red**, is the part of the page that tells you what branches you're comparing, and whether they are able to be merged automatically. In this example, the green text **Able to Merge** tells us that there are no merge conflicts that would cause issues during the merge. 
+
+  - **Merge Conflicts** occur when two branches have sections that are not compatible with each other. This is why its important for each branch to be working on a different section or 'feature' of the code. 
+
+Outlined in **blue**, is a summary of the commits in the branch. You can see how many commits were made, how many files were changed, and who contributed to the branch. Additionally you can also see the commit messages and the date they were each committed. 
+
+Emphasized in **green**, is the **create pull request** button. Clicking this button will begin the review process to merge your branch into the main! 
+
+### Open Pull Request 
+
+GitHub will lead you to the **open a pull request** page. Here you can write messages to your collaborators letting them know you'd like to merge the branch into the main and elaborate on the branch's changes. Once you're ready to submit the request, click the **create pull request** button again.
+
+```{r openpull, echo=FALSE, out.width="50%"}
+include_graphics("images/OpenPull.png")
+```
+
 
 ### Merge 
 
+The final page before merging allows you to review the proposed merge with your collaborators. The conversation tab gives you a summary of the changes made, the ability to finalize the merge via the **merge pull request button**, and a place to add more comments or close the pull request. There are also other tabs that go into more detail on the commit and change history of your branch. 
+
+```{r mergePage, echo=FALSE, out.width="90%"}
+include_graphics("images/MergePage.png")
+```
+
+In a typical workflow, collaborators would discuss the commit history of the branch together before merging to the main to avoid confusion and merge conflicts. 
+
+
+```{r mergeworkflow, echo=FALSE, out.width="110%"}
+include_graphics("images/MergeWorkflow.png")
+```
+
+
 ## (Re)Sources
+
+Congrats! We have made it to the end of today's session :) We know that github can be a bit confusing conceptually, but we hope you can use this workbook and the resources below to help you reference problems in the future! We will also be hosting our next R Work session December 21 from 1-3pm to go over more questions or issues! 
+
   - [Link to Join Github](https://github.com/join)
   - [How to Create a GitHub Account](https://www.wikihow.com/Create-an-Account-on-GitHub)
   - [R Advisory Group Resources](https://doimspp.sharepoint.com/sites/nps-nrss-imdiv/SitePages/R-Adv.aspx) Monitors and manages the release of R, RStudio and Git in the NPS Software Center. The Advisory Group can help with installation and configuration issues.
