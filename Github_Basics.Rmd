@@ -81,8 +81,9 @@ usethis::create_github_token()
 
   c. enter 'RStudio' in the ***Note** field 
   d. set the **expiration** to a later date (I'd recommend 90 days)
-  e. scroll to the bottom and click **generate token** 
-  f. this code will only generate once so make sure you **copy the personal access token to your clipboard**!!! 
+  e. double check that the usethis package successfully checked off 'repo', 'workflow', 'gist' and 'user' the following boxes in the **select scopes** section.
+  f. scroll to the bottom and click **generate token** 
+  g. this code will only generate once so make sure you **copy the personal access token to your clipboard**!!! 
 
 ### 6. Insert your personal access token in the Git Credential Store 
   a. run the code below and when prompted paste your personal access token 
