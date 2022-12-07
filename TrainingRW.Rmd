@@ -13,6 +13,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Collaborator section
 
+Rachel was here..
+If a woodchuck could chuck wood!
 
 ## R Markdown Overview
 
