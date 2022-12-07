@@ -386,6 +386,7 @@ Congrats! We have made it to the end of today's session :) We know that github c
   - [Version Control IMD Training](https://katemmiller.github.io/IMD_R_Training_Advanced/)
   - [GitHub Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
 
+
 ### Having issues installing packages?
 
 If you're having trouble installing packages and are getting an error related to the 'CRAN server', you may need to change your CRAN mirror settings. This seems to be an issue with folks who have recently installed R and using the the 4.2.0 version. 
@@ -395,5 +396,7 @@ Navigate to **Tools>Global Options>Packages**. Click the **Change** button next 
 ```{r cran, echo=FALSE, out.width="50%"}
 include_graphics("images/CranMirror.png")
 ```
+
+congrats! You're done! 
 
 # {-}
