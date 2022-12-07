@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Collaborator Section 
-
+Hi, Sam! Thanks for doing the training today.
 
 ## R Markdown Overview 
 
