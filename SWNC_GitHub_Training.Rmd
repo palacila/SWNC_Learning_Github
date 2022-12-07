@@ -16,6 +16,8 @@ Carolyn is GitHub training again. It's snowing!
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+## Collaborator Section
+The other Carolyn has been here. It's been snowing in Torrey all day too!
 
 ## R Markdown
 
